@@ -1,0 +1,112 @@
+/* Container Styling */
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f4ff, #dff0ff);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 100vw;
+}
+
+/* Heading Styling */
+.notFound h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ff4a4a;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+.notFound p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Link Styling */
+.homeLink {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0078d4;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.homeLink:hover {
+    background-color: #005bb5;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .notFound h1 {
+        font-size: 4rem;
+    }
+
+    .notFound p {
+        font-size: 1.2rem;
+    }
+
+    .homeLink {
+        font-size: 1rem;
+    }
+    .notFound{
+        width:95vw
+    }
+}
+
+@media (max-width: 768px) {
+    .notFound {
+        padding: 15px;
+    }
+
+    .notFound h1 {
+        font-size: 3.5rem;
+    }
+
+    .notFound p {
+        font-size: 1rem;
+    }
+
+    .homeLink {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+    .notFound{
+        width:95vw
+    }
+}
+
+@media (max-width: 480px) {
+    .notFound h1 {
+        font-size: 3rem;
+    }
+
+    .notFound p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .homeLink {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+    .notFound{
+        width:110vw
+    }
+}
